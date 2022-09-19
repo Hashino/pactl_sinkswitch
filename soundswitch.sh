@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#array with all enabled sinks
+#array with all active sinks
 sinks=($(pactl list short sinks | awk '{print $2}'))
 #lenght of sinks - 1
 n_sinks=$((${#sinks[@]}-1))
